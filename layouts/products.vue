@@ -2,18 +2,21 @@
     <div>
         <header  style="font-size: 16px; background-color: white;">
             <nav  class="nav">
-                <NuxtLink to="/" style="font-weight: 700;">Nuxt Dojo</NuxtLink>
-                <ul>
-                    <li style="color: red;"><NuxtLink to="/">Home</NuxtLink></li>
-                    <li><NuxtLink to="/about">About</NuxtLink></li>
-                    <li><NuxtLink to="/products">Products</NuxtLink></li>
-                </ul>
+                <NuxtLink to="/products" style="font-weight: 700;">Nuxt Dojo</NuxtLink>
             </nav>
         </header>
 
         <div style="margin: auto; padding: 4px;">
             <slot />
         </div>
+
+        <footer>
+            <ul>
+                <li><NuxtLink to="/">Home</NuxtLink></li>
+                <li><NuxtLink to="/about">About</NuxtLink></li>
+                <li><NuxtLink to="/products">Merch</NuxtLink></li>
+            </ul>
+        </footer>
     </div>
 </template>
 

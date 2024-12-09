@@ -8,7 +8,9 @@
 </template>
 
 <script setup>
-defineProps(['error'])
+defineProps({
+    error: Object
+})
 
 const handleClearError  =() => clearError({ redirect: '/'})
 </script>

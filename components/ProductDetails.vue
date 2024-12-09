@@ -2,7 +2,7 @@
     <div style=" background-color: aquamarine;">
         <div style="gap: 10px;">
             <div style="padding: 7px;">
-                <img :src="product.image" alt="product img" style="width: 100px; height: 100px; margin: auto;">
+                <img :src="`${product.image}`" alt="product img" style="width: 100px; height: 100px; margin: auto;">
             </div>
             <div style="padding: 7px;">
                 <h2 style="font-weight: 700;">{{ product.title }}</h2>
